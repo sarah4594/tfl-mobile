@@ -11,7 +11,24 @@ type Events = {
   theater: Event[];
 };
 const events: Events = {
-  sports: [{ name: 'Kansas City Royals', imageUrl: 'https://via.placeholder.com/150' }],
+  sports: [
+    {
+      name: 'Kansas City Royals',
+      imageUrl: 'https://i.tixcdn.io/tcms/264/performer/Kansas_City_Royals_Logo.jpg',
+    },
+    {
+      name: 'Monster Jam',
+      imageUrl: 'https://i.tixcdn.io/tcms/10006/category/truck-racing.jpg',
+    },
+    {
+      name: 'Sporting Kansas City vs. Inter Miami CF',
+      imageUrl: 'https://i.tixcdn.io/tcms/264/list/soccer-2.jpg',
+    },
+    {
+      name: 'WWE: Raw',
+      imageUrl: 'https://i.tixcdn.io/tcms/10006/category/WWE.jpg',
+    },
+  ],
   concerts: [{ name: 'Kenny Chesney', imageUrl: 'https://via.placeholder.com/150' }],
   theater: [{ name: 'Jeff Dunham', imageUrl: 'https://via.placeholder.com/150' }],
 };
@@ -50,7 +67,7 @@ function CategoryView({ category, city, events }: CategoryViewProps) {
 
 function EventView({ event }: { event: Event }) {
   return (
-    <View className="ml-4 h-40 w-40 flex-none rounded-lg bg-gray-200">
+    <View className="ml-4 h-72 w-72 flex-none bg-gray-200">
       <Image
         source={{ uri: event.imageUrl }}
         style={{ flex: 1, width: '100%' }}
