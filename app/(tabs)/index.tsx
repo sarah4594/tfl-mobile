@@ -58,22 +58,24 @@ function CategoryView({ category, city, events }: CategoryViewProps) {
       </Text>
       <ScrollView className="mt-4 flex" horizontal>
         {events.map((event, index) => (
-          <EventView key={index} event={event} />
+          <EventView key={index} event={event} isLast={index === events.length - 1} />
         ))}
       </ScrollView>
     </View>
   );
 }
 
-function EventView({ event }: { event: Event }) {
+function EventView({ event, isLast }: { event: Event; isLast?: boolean }) {
   return (
-    <View className="ml-4 h-72 w-72 flex-none bg-gray-200">
+    <View className={`ml-4 h-72 w-72 flex-none bg-gray-200 ${isLast ? 'mr-4' : ''}`}>
       <Image
         source={{ uri: event.imageUrl }}
         style={{ flex: 1, width: '100%' }}
         contentFit="cover"
       />
-      <Text className="text-center text-sm font-bold text-gray-800">{event.name}</Text>
+      <Text className="absolute w-full bg-black/40 px-3 py-2 text-xl font-bold text-white">
+        {event.name}
+      </Text>
     </View>
   );
 }
