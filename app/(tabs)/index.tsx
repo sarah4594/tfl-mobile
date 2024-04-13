@@ -29,8 +29,43 @@ const events: Events = {
       imageUrl: 'https://i.tixcdn.io/tcms/10006/category/WWE.jpg',
     },
   ],
-  concerts: [{ name: 'Kenny Chesney', imageUrl: 'https://via.placeholder.com/150' }],
-  theater: [{ name: 'Jeff Dunham', imageUrl: 'https://via.placeholder.com/150' }],
+  concerts: [
+    {
+      name: 'Kenny Chesney',
+      imageUrl: 'https://i.tixcdn.io/tcms/264/performer/15536365000_6ec12851bb_b%20%281%29.jpg',
+    },
+    {
+      name: 'Morgan Wallen',
+      imageUrl:
+        'https://i.tixcdn.io/tcms/264/performer/Morgan_Wallen_performing_in_Salt_Lake_City.jpg',
+    },
+    {
+      name: 'Olivia Rodrigo',
+      imageUrl: 'https://i.tixcdn.io/tcms/264/performer/Olivia_Rodrigo.jpg',
+    },
+    {
+      name: 'Hozier',
+      imageUrl: 'https://i.tixcdn.io/tcms/10006/performer/Hozier.jpg',
+    },
+  ],
+  theater: [
+    {
+      name: 'Jeff Dunham',
+      imageUrl: 'https://i.tixcdn.io/tcms/10006/performer/Jeff_Dunham.jpg',
+    },
+    {
+      name: 'Tom Segura',
+      imageUrl: 'https://i.tixcdn.io/tcms/264/performer/shutterstock_1007889334-2.jpg',
+    },
+    {
+      name: 'Jimmy Carr',
+      imageUrl: 'https://i.tixcdn.io/tcms/10006/performer/Jimmy_Carr.jpg',
+    },
+    {
+      name: 'Wanda Sykes',
+      imageUrl: 'https://i.tixcdn.io/tcms/10006/category/shutterstock_1007889328.jpg',
+    },
+  ],
 };
 export default function Home() {
   return (
