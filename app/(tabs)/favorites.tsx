@@ -2,11 +2,11 @@ import { StyleSheet, View } from 'react-native';
 
 import { ScreenContent } from '#components/ScreenContent';
 
-export default function Home() {
+export default function Favorites() {
   return (
     <>
       <View style={styles.container}>
-        <ScreenContent path="app/(tabs)/index.tsx" title="Home" />
+        <ScreenContent path="app/(tabs)/favorites.tsx" title="Favorites" />
       </View>
     </>
   );
